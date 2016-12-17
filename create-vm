@@ -1,0 +1,16 @@
+#!/bin/bash
+echo -n "please enter vm name: "
+read vm
+iso="/home/ttn/Desktop/ubuntu/ubuntu-16.04.1-desktop-amd64.iso"
+hdd="8"
+hddlocation="/home/ttn/Desktop/$vm"
+
+sudo virt-install \
+--connect qemu:///system \
+--virt-type kvm \
+--name $vm \
+--memory 1024 \
+--cdrom $iso \
+--disk path=$hddlocation.qcow2,size=$hdd \
+--network network=default \
+--graphics vnc
