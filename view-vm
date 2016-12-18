@@ -1,0 +1,1 @@
+virt-viewer -c qemu:///system ubuntu1
