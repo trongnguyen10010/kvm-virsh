@@ -1,0 +1,3 @@
+sudo virt-sysprep -a ubuntu4.qcow2 --hostname ubuntu4
+# to re-generate ssh host keys
+sudo dpkg-reconfigure openssh-server
