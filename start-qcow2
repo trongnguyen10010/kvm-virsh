@@ -6,4 +6,4 @@ sudo virt-install \
 --boot hd \
 --disk path=/home/ttn/Desktop/ubuntu1.qcow2 \
 --network network=default \
---graphics vnc
+--graphics vnc &
