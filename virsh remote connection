@@ -1,6 +1,6 @@
 configure ssh
 
-add user to virtd group
+add user to virt group
 
 virsh -c qemu+ssh://ttn@192.168.0.55:port/system
 
